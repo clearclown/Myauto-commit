@@ -1,0 +1,25 @@
+[package]
+license = "MIT"
+edition = "2021"
+version = "0.1.4"
+name = "auto-commit"
+readme = "README.md"
+categories = ["command-line-utilities"]
+homepage = "https://github.com/m1guelpf/auto-commit"
+repository = "https://github.com/m1guelpf/auto-commit"
+description = "Automagically generate commit messages."
+authors = ["Miguel Piedrafita <soy@miguelpiedrafita.com>"]
+
+[dependencies]
+rand = "0.8.5"
+serde = "1.0.164"
+spinners = "4.1.0"
+question = "0.2.2"
+schemars = "0.8.12"
+serde_json = "1.0.99"
+env_logger = "0.10.0"
+clap-verbosity-flag = "2.0.0"
+log = { version = "0.4.8", features = ["std"] }
+tokio = { version = "1.28.2", features = ["full"] }
+clap = { version = "4.0.18", features = ["derive"] }
+async-openai = { version = "0.12.0", default-features = false, features = ["native-tls"] }
